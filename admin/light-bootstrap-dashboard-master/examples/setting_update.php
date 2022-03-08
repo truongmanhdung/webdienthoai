@@ -58,18 +58,6 @@ include 'db.php';
     ?>
     
     <script>
-        imgInp.onchange = evt => {
-            const [file] = imgInp.files
-            if (file) {
-                blah.src = URL.createObjectURL(file)
-            }
-        }
-        imgInp2.onchange = evt => {
-            const [file] = imgInp2.files
-            if (file) {
-                blah2.src = URL.createObjectURL(file)
-            }
-        }
         imgInp3.onchange = evt => {
             const [file] = imgInp3.files
             if (file) {
@@ -84,21 +72,13 @@ include 'db.php';
         $slogan = $_POST['slogan'];
         $address = $_POST['address'];
         $note = $_POST['note'];
-        if ($_FILES['banner']['type'] == "image/jpeg" || $_FILES['banner']['type'] == "image/png" || $_FILES['banner']['type'] == "image/gif" || $_FILES['banner']['type'] == "image/webp"
-            && $_FILES['image_left']['type'] == "image/jpeg" || $_FILES['image_left']['type'] == "image/png" || $_FILES['image_left']['type'] == "image/gif" || $_FILES['image_left']['type'] == "image/webp"
-        ) {
-            $banner = $_FILES['banner']['name'];
+        if ($_FILES['logo']['name']) {
             $logo = $_FILES['logo']['name'];
-            $image_left = $_FILES['image_left']['name'];
             // Lấy ra tên ảnh
-            $tmp1 = $_FILES['banner']['tmp_name'];
-            $tmp2 = $_FILES['image_left']['tmp_name'];
             $tmp3 = $_FILES['logo']['tmp_name'];
             // Khai báo biến lưu trữ đường dẫn
-            move_uploaded_file($tmp1, "images/setting/" . $banner);
-            move_uploaded_file($tmp2, "images/setting/" . $image_left);
             move_uploaded_file($tmp3, "images/setting/" . $logo);
-            $setting = "UPDATE `setting` SET `logo`='$logo',`image_banner`='$banner',`h5_banner`='$h5_banner',`h3_banner`='$h3_banner',`slogan`='$slogan',`image_left`='$image_left',`address`='$address',`note`='$note',`time`='$date' WHERE `id` = '$id'";
+            $setting = "UPDATE `setting` SET `logo`='$logo',`h5_banner`='$h5_banner',`h3_banner`='$h3_banner',`slogan`='$slogan',`address`='$address',`note`='$note',`time`='$date' WHERE `id` = '$id'";
             $result_setting = $conn->query($setting);
             if ($result_setting) {
                 echo "<script>location.href='setting.php'</script>";

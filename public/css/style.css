@@ -534,6 +534,9 @@
     text-align: center;
     position: relative;
     height: 400px;
+    z-index: 1000;
+    border-radius: 6px;
+    background-color: white;
   }
   .product-item img{
     width: 100%;
@@ -1052,4 +1055,15 @@ td{
 .carousel-item img{
   height: 500px !important;
   object-fit: cover;
+}
+
+.img-cate123{
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.img-abc{
+  padding: 15px 15px 15px 15px;
+    background-color: #f2f2f2;
+    border-radius: 15px 15px 15px 15px
 }

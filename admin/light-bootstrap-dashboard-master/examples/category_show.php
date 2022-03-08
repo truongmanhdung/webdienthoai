@@ -29,7 +29,6 @@
         <tr class="update">
           <th scope="col" style="text-align: center !important;">STT</th>
           <th scope="col" style="text-align: center !important;">NAME CATEGORY</th>
-          <th scope="col" style="text-align: center !important;">IMAGE BANNER CATEGORY</th>
           <th scope="col" style="text-align: center !important;">IMAGE CATEGORY</th>
           <th scope="col" style="text-align: center !important;">TIME UPDATE</th>
           <th scope="col" style="text-align: center !important;">CHỨC NĂNG</th>
@@ -46,7 +45,6 @@
             echo '<tr>
                   <th style="text-align: center !important;" scope="row">' . $dem . '</th>
                   <td style="text-align: center !important;"><a href="../../../category.php?id='.$row_search['id_category'].'">' . $row_search['name_category'] . '</a></td>
-                  <td style="text-align: center !important;"><img width="100px" src="images/category/banner/' . $row_search['image_banner'] . '" alt=""></td>
                   <td style="text-align: center !important;"><img width="100px" src="images/category/' . $row_search['image'] . '" alt=""></td>
                   <td style="text-align: center !important;">' . $row_search['time_update'] . '</td>
                   <td style="text-align: center !important;"><a href="category_delete.php?id=' . $row_search['id_category'] . '" onclick="return confirm(\'Bạn có muốn xóa không ?\')"><i class="fas mx-1 btn btn-primary fa-times-circle"></i></a><a href="category_update.php?q=sua&id=' . $row_search['id_category'] . '"><i class="mx-1 btn btn-primary fas fa-edit"></i></a></td>
@@ -68,7 +66,7 @@
             echo '<tr>
                   <th style="text-align: center !important;" scope="row">' . $dem . '</th>
                   <td style="text-align: center !important;"><a href="../../../category.php?id='.$row['id_category'].'">' . $row['name_category'] . '</td>
-                  <td style="text-align: center !important;"><img width="100px" src="images/category/banner/' . $row['image_banner'] . '" alt=""></td>
+                
                   <td style="text-align: center !important;"><img width="100px" src="images/category/' . $row['image'] . '" alt=""></td>
                   <td style="text-align: center !important;">' . $row['time_update'] . '</td>
                   <td style="text-align: center !important;"><a href="category_delete.php?id=' . $row['id_category'] . '" onclick="return confirm(\'Bạn có muốn xóa không ?\')"><i class="fas mx-1 btn btn-primary fa-times-circle"></i></a><a href="category_update.php?q=sua&id=' . $row['id_category'] . '"><i class="mx-1 btn btn-primary fas fa-edit"></i></a></td>

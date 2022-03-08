@@ -428,7 +428,7 @@ if (isset($_GET['id'])) {
   </div>
   <div class="slide_sp mt-4 mb-4">
     <h3 class="container border-bottom pb-4">Sản phẩm liên quan</h3>
-    <div class="swiper-container container">
+    <div class="swiper-container swiper-container4 container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper pt-4 pb-4">
         <!-- Slides -->

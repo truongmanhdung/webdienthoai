@@ -24,7 +24,7 @@ include 'header.php';
 
 
   .banner-footer {
-    background-image: url(https://curnonwatch.com/jewelryBanner-2vj.png?auto=png&format=png&width=1920);
+    background-image: url(https://cf.shopee.vn/file/233be77758a6373022bcda83dabbf31d);
     height: 370px;
     margin: 100px 0;
   }
@@ -295,7 +295,7 @@ if (isset($_GET['id'])) {
 <!-- end product_nam -->
 <div class="container">
   <div class="banner-footer d-flex justify-content-center flex-column">
-    <p class="text-secondary">MIX&MATCH PHỤ KIỆN</p>
+    <p class="text-white ms-5 mb-4 ">MIX&MATCH PHỤ KIỆN</p>
     <button class="btn btn-dark text-white" href="/phu-kien.html">TÌM HIỂU THÊM</button>
   </div>
   <div class="mb-4">

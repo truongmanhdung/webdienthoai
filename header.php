@@ -33,13 +33,13 @@
         <div class="d-flex justify-content-between p-2 align-items-center">
             <ul class="mb-2 mb-lg-0 d-flex">
                 <li class="nav-item test1">
-                    <a class="nav-link dongho" href="index.php">ĐIỆN THOẠI</a>
+                    <a class="nav-link dongho" href="category.php?id=11">ĐIỆN THOẠI</a>
                 </li>
                 <li class="nav-item test2">
-                    <a class="nav-link phukien" href="#">PHỤ KIỆN</a>
+                    <a class="nav-link phukien" href="category.php?id=12">PHỤ KIỆN</a>
                 </li>
                 <li class="nav-item test3">
-                    <a class="nav-link thuonghieu" href="#">APPLE WATCH</a>
+                    <a class="nav-link thuonghieu" href="category.php?id=16">MACBOOK</a>
                 </li>
             </ul>
             <?php 
@@ -51,7 +51,7 @@
                         echo '
                         <div class="logo">
                             <a href="index.php">
-                                <img src="./admin/light-bootstrap-dashboard-master/examples/images/setting/'.$logo.'" alt="">
+                                <img width="150" src="./admin/light-bootstrap-dashboard-master/examples/images/setting/'.$logo.'" alt="">
                             </a>
                         </div>
                         ';

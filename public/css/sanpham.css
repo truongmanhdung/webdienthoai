@@ -133,3 +133,8 @@ li {
 .active_nhan{
   background-color:rgba(128, 124, 124, 0.8)
 }
+
+.swiper-container4{
+  position: relative;
+  overflow: hidden;
+}

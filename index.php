@@ -73,7 +73,7 @@
                   $link .
                   '" data-aos="fade-down"
                   data-aos-anchor-placement="top-bot" data-aos-duration="1500" class="btn btn-outline-primary bg-test btn_view mb-5"
-                                  >MUA ĐỒNG HỒ NGAY</a
+                                  >MUA ĐIỆN THOẠI NGAY</a
                                 >
               </div>
             </div>
@@ -133,17 +133,17 @@
                   <a href="category.php?id=' .
                         $row['id_category'] .
                         '">
-                    <div class="category_item">
-                      <img src="./admin/light-bootstrap-dashboard-master/examples/images/category/' .
+                    <div class="category_item img-abc">
+                      <img class="img-cate123" src="./admin/light-bootstrap-dashboard-master/examples/images/category/' .
                         $row['image'] .
                         '" alt="" />
-                      <div class="category_position">
-                        <h3 style="text-transform: uppercase;">' .
-                        $row['name_category'] .
-                        '</h3>
-                        <p>MUA NGAY</p>
-                      </div>
+                      
                     </div>
+                    <div class="text-center mt-2">
+                        <p class="mt-2" style="text-transform: uppercase;">' .
+                        $row['name_category'] .
+                        '</p>
+                      </div>
                   </a>
                 </div>';
                 }
@@ -156,13 +156,13 @@
         <div class="product container" data-aos="fade-up"
      data-aos-anchor-placement="top-center" data-aos-duration="2000">
           <div class="text-center mt-5 mb-5">
-            <h3>MEN'S BEST SELLERS</h3>
+            <h3>Điện thoại Iphone chính hãng</h3>
             <p>KHÁM PHÁ THÊM <i class="fas fa-arrow-right"></i></p>
           </div>
           <div class="row pb-4 ">
             <?php
             $sql =
-                "SELECT * FROM products where product_category like N'%đồng hồ nam%' LIMIT 8";
+                "SELECT * FROM products where product_category like N'%điện thoại iphone%' LIMIT 8";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
@@ -211,13 +211,13 @@
         <div class="product container" data-aos="fade-up"
      data-aos-anchor-placement="top-center" data-aos-duration="2000">
           <div class="text-center mt-5 mb-5">
-            <h3>WOMEN'S BEST SELLERS</h3>
+            <h3>Macbook chính hãng</h3>
             <p>KHÁM PHÁ THÊM <i class="fas fa-arrow-right"></i></p>
           </div>
           <div class="row pb-4">
           <?php
           $sql =
-              "SELECT * FROM products where product_category like N'%đồng hồ nữ%' LIMIT 8";
+              "SELECT * FROM products where product_category like N'%macbook%' LIMIT 8";
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
               while ($row = $result->fetch_assoc()) {
